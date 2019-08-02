@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="check.js"></script>
+</head>
+<body>
+    <div id="main">
+        <table>
+            <tr>
+                <td id="top1" colspan="2">
+                    <p id="lab"><b>Лабораторная работа №1</b></p>
+                </td>
+            </tr>
+            <tr >
+                <td id="top2" colspan="2">
+                    <p id="name"><b>Выполнила:</b> Михайлова А.А.,
+                        <b>гр.</b> P3211
+                        <br>
+                        <b>Вариант:</b> 211014
+                       </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="65%">
+                    <p align="justify">
+                        Эта <span class="important">невероятно полезная</span> страница поможет вам определить, попадает ли точка в заданную область.
+                        <br> <br>
+                        Просто задайте значения <span class="important">R, X, Y</span> - и вы узнаете ответ.
+                    </p>
+                </td>
+                <td id="pict" rowspan="3">
+                    <img src="1.png" width="95%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Изменение R</h2>
+                    <p>
+                       Задайте значение для расстояния R.
+                    </p>
+                    <form>
+                        <select>
+                            <option>1</option>
+                            <option>1.5</option>
+                            <option>2</option>
+                            <option>2.5</option>
+                            <option>3</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Изменение X</h2>
+                    <p>
+                        Задайте значение для координаты X.
+                    </p>
+                    <form>
+                        <input type="text" placeholder="значение от -3 до 5" id="x_value" pattern="^[ 0-9]+$">
+                        <span id="warning"></span>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Изменение Y</h2>
+                    <p>
+                        Задайте значение для координаты Y.
+                    </p>
+                    <div>
+                        <button>-4</button>
+                        <button>-3</button>
+                        <button>-2</button>
+                        <button>-1</button>
+                        <button>0</button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <button id="send_button" type="submit">Определить</button>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

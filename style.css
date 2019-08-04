@@ -108,14 +108,14 @@ option{
     font-size: medium;
     margin: 0;
 }
-#top1{
+.top1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: #aec4c7;
     color: #ffffff;
     text-align: center;
 }
-#top2{
+.top2{
     background:#e0f7fa;
     text-align: center;
 }
@@ -128,3 +128,24 @@ option{
     visibility: hidden;
     margin-left: 3%;
 }
+#ans{
+    width: 47%;
+}
+#ans h2{
+    background-color: #e0f7fa;
+    display: inline-block;
+    margin-bottom: 1.5%;
+    margin-top: 0;
+    padding: 2px 5px;
+    color: black;
+    font-size: large;
+    border-radius: 4px;
+}
+#ans td{
+    font-size: medium;
+    width: 50%;
+}
+#ans button{
+    margin: 0 0;
+}
+

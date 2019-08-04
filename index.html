@@ -7,15 +7,14 @@
     <script src="check.js"></script>
 </head>
 <body>
-    <div id="main">
         <table>
             <tr>
-                <td id="top1" colspan="2">
+                <td class="top1" colspan="2">
                     <p id="lab"><b>Лабораторная работа №1</b></p>
                 </td>
             </tr>
             <tr >
-                <td id="top2" colspan="2">
+                <td class="top2" colspan="2">
                     <p id="name"><b>Выполнила:</b> Михайлова А.А.,
                         <b>гр.</b> P3211
                         <br>
@@ -35,21 +34,20 @@
                     <img src="1.png" width="95%">
                 </td>
             </tr>
+            <form action="table.php" method="get">
             <tr>
                 <td>
                     <h2>Изменение R</h2>
                     <p>
                        Задайте значение для расстояния R.
                     </p>
-                    <form>
-                        <select>
+                        <select name="r" required>
                             <option>1</option>
                             <option>1.5</option>
                             <option>2</option>
                             <option>2.5</option>
                             <option>3</option>
                         </select>
-                    </form>
                 </td>
             </tr>
             <tr>
@@ -58,10 +56,8 @@
                     <p>
                         Задайте значение для координаты X.
                     </p>
-                    <form>
-                        <input type="text" placeholder="значение от -3 до 5" id="x_value" pattern="^[ 0-9]+$">
+                        <input type="text" placeholder="значение от -3 до 5" id="x_value" name="x" required autocomplete="off">
                         <span id="warning"></span>
-                    </form>
                 </td>
             </tr>
             <tr>
@@ -71,27 +67,28 @@
                         Задайте значение для координаты Y.
                     </p>
                     <div>
-                        <button>-4</button>
-                        <button>-3</button>
-                        <button>-2</button>
-                        <button>-1</button>
-                        <button>0</button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
+                        <button type="button" name="button_y" value="-4">-4</button>
+                        <button type="button" name="button_y" value="-3">-3</button>
+                        <button type="button" name="button_y" value="-2">-2</button>
+                        <button type="button" name="button_y" value="-1">-1</button>
+                        <button type="button" name="button_y" value="0" autofocus>0</button>
+                        <button type="button" name="button_y" value="1">1</button>
+                        <button type="button" name="button_y" value="2">2</button>
+                        <button type="button" name="button_y" value="3">3</button>
+                        <button type="button" name="button_y" value="4">4</button>
                     </div>
+                    <input type="hidden" name="hidden_y" id="hidden_y"  value="0">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <div>
-                        <button id="send_button" type="submit">Определить</button>
+                            <button id="send_button" type="submit">Определить</button>
                     </div>
 
                 </td>
             </tr>
+            </form>
         </table>
-    </div>
 </body>
 </html>

@@ -12,6 +12,7 @@ table {
     width: 65%;
     border-collapse: collapse;
     border-radius: 10px;
+    border: 1px solid;
 }
 td{
     padding: 1.7% 2%;
@@ -129,14 +130,15 @@ option{
     margin-left: 3%;
 }
 #ans{
-    width: 47%;
+    width: 50%;
+    border: 1px solid;
 }
 #ans h2{
     background-color: #e0f7fa;
     display: inline-block;
     margin-bottom: 1.5%;
     margin-top: 0;
-    padding: 2px 5px;
+    padding: 0 0;
     color: black;
     font-size: large;
     border-radius: 4px;

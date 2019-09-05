@@ -1,9 +1,11 @@
 window.onload = function () {
-    //получаем значение нажатой кнопочки у игрека
+    //получаем значение нажатой кнопочки у игрека и оставляем ее сфокусированной
     let buttons = document.getElementsByName("button_y");
     for (let i=0; i<buttons.length; i++){
         buttons[i].onclick = function (event) {
             document.getElementById("hidden_y").value = event.target.value;
+            buttons.forEach( elem => elem.classList.remove("focused") );
+            event.target.classList.add("focused");
         }
     }
     //проверка валидного ввода
@@ -12,7 +14,7 @@ window.onload = function () {
         warning_element.style.visibility = "hidden";
         let input = e.target.value;
         let incorrect = isNaN(input);
-        console.log(incorrect);
+        //console.log(incorrect);
         if ((incorrect === true)||(input[input.length-1] === " ")){
             if (input !== "-") {
                 e.target.value = input.substring(0, input.length - 1);

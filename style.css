@@ -12,7 +12,6 @@ table {
     width: 65%;
     border-collapse: collapse;
     border-radius: 10px;
-    border: 1px solid;
 }
 td{
     padding: 1.7% 2%;
@@ -46,6 +45,9 @@ table button:active{
 }
 /*Элемент, который получает фокус*/
 table button:focus{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.54);
+}
+.focused{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.54);
 }
 img{
@@ -131,7 +133,6 @@ option{
 }
 #ans{
     width: 50%;
-    border: 1px solid;
 }
 #ans h2{
     background-color: #e0f7fa;

@@ -5,89 +5,109 @@
     <title>Лабораторная работа №1</title>
     <link rel="stylesheet" href="style.css">
     <script src="check.js"></script>
+    <script src="buttons.js"></script>
 </head>
 <body>
-        <table>
-            <tr>
-                <td class="top1" colspan="2">
-                    <p id="lab"><b>Лабораторная работа №1</b></p>
-                </td>
-            </tr>
-            <tr >
-                <td class="top2" colspan="2">
-                    <p id="name"><b>Выполнила:</b> Михайлова А.А.,
-                        <b>гр.</b> P3211
-                        <br>
-                        <b>Вариант:</b> 211014
-                       </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="65%">
-                    <p align="justify">
-                        Эта <span class="important">невероятно полезная</span> страница поможет вам определить, попадает ли точка в заданную область.
-                        <br> <br>
-                        Просто задайте значения <span class="important">R, X, Y</span> - и вы узнаете ответ.
-                    </p>
-                </td>
-                <td id="pict" rowspan="3">
-                    <img src="1.png" width="95%">
-                </td>
-            </tr>
-            <form action="table.php" method="get">
-            <tr>
-                <td>
-                    <h2>Изменение R</h2>
-                    <p>
-                       Задайте значение для расстояния R.
-                    </p>
-                        <select name="r" required>
-                            <option>1</option>
-                            <option>1.5</option>
-                            <option>2</option>
-                            <option>2.5</option>
-                            <option>3</option>
-                        </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Изменение X</h2>
-                    <p>
-                        Задайте значение для координаты X.
-                    </p>
-                        <input type="text" placeholder="значение от -3 до 5" id="x_value" name="x" required autocomplete="off">
-                        <span id="warning"></span>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <h2>Изменение Y</h2>
-                    <p>
-                        Задайте значение для координаты Y.
-                    </p>
-                    <div>
-                        <button type="button" name="button_y" value="-4">-4</button>
-                        <button type="button" name="button_y" value="-3">-3</button>
-                        <button type="button" name="button_y" value="-2">-2</button>
-                        <button type="button" name="button_y" value="-1">-1</button>
-                        <button type="button" name="button_y" value="0" autofocus>0</button>
-                        <button type="button" name="button_y" value="1">1</button>
-                        <button type="button" name="button_y" value="2">2</button>
-                        <button type="button" name="button_y" value="3">3</button>
-                        <button type="button" name="button_y" value="4">4</button>
-                    </div>
-                    <input type="hidden" name="hidden_y" id="hidden_y"  value="0">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div>
-                            <button id="send_button" type="submit">Определить</button>
-                    </div>
-                </td>
-            </tr>
-            </form>
-        </table>
+<table>
+    <tr>
+        <td class="top1" colspan="2">
+            <p id="lab"><b>Лабораторная работа №1</b></p>
+        </td>
+    </tr>
+    <tr>
+        <td class="top2" colspan="2">
+            <p id="name"><b>Выполнила:</b> Михайлова А.А.,
+                <b>гр.</b> P3211
+                <br>
+                <b>Вариант:</b> 211014
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="65%">
+            <p align="justify">
+                Эта <span class="important">невероятно полезная</span> страница поможет вам определить, попадает ли
+                точка в заданную область.
+                <br> <br>
+                Просто задайте значения <span class="important">R, X, Y</span> - и вы узнаете ответ.
+            </p>
+        </td>
+        <td id="pict" rowspan="3">
+            <img src="1.png" width="95%">
+        </td>
+    </tr>
+    <form action="table.php" method="get">
+        <tr>
+            <td>
+                <h2>Изменение R</h2>
+                <p>
+                    Задайте значение для расстояния R.
+                </p>
+                <select name="r" required>
+                    <option>1</option>
+                    <option>1.5</option>
+                    <option>2</option>
+                    <option>2.5</option>
+                    <option>3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Изменение X</h2>
+                <p>
+                    Задайте значение для координаты X.
+                </p>
+                <input type="text" placeholder="значение от -3 до 5" id="x_value" name="x" required autocomplete="off">
+                <span id="warning"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>Изменение Y</h2>
+                <p>
+                    Задайте значение для координаты Y.
+                </p>
+                <div>
+                    <button type="button" name="button_y" value="-4" class="by" id="y_-4">
+                        -4
+                    </button>
+                    <button type="button" name="button_y" value="-3" id="y_-3">
+                        -3
+                    </button>
+                    <button type="button" name="button_y" value="-2" id="y_-2">
+                        -2
+                    </button>
+                    <button type="button" name="button_y" value="-1" id="y_-1">
+                        -1
+                    </button>
+                    <button type="button" name="button_y" value="0" class="focused" id="y_0">
+                        0
+                    </button>
+                    <button type="button" name="button_y" value="1" id="y_1">
+                        1
+                    </button>
+                    <button type="button" name="button_y" value="2" id="y_2">
+                        2
+                    </button>
+                    <button type="button" name="button_y" value="3" id="y_3">
+                        3
+                    </button>
+                    <button type="button" name="button_y" value="4" id="y_4">
+                        4
+                    </button>
+                </div>
+                <input type="hidden" name="hidden_y" id="hidden_y" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>
+                    <button id="send_button" type="submit">Определить</button>
+                </div>
+            </td>
+        </tr>
+    </form>
+</table>
 </body>
 </html>

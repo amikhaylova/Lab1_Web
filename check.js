@@ -21,13 +21,13 @@ window.onload = function () {
                 warning_element.textContent = "Требуется число!";
                 warning_element.style.visibility = "visible";
             }
-        } else if (parseFloat(input) < -3) {
+        } else if (parseFloat(input) <= -3){
             e.target.value = input.substring(0, input.length - 1);
-            warning_element.textContent = "Не меньше -3";
+            warning_element.textContent = "Недопустимое значение";
             warning_element.style.visibility = "visible";
-        } else if (parseFloat(input) > 5) {
+        } else if (parseFloat(input) >= 5) {
             e.target.value = input.substring(0, input.length - 1);
-            warning_element.textContent = "Не больше 5";
+            warning_element.textContent = "Недопустимое значение";
             warning_element.style.visibility = "visible";
         }
     }

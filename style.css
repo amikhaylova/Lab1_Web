@@ -1,6 +1,7 @@
 body {
     /*margin: 0;*/
     margin: 1%;
+    background: white;
    /* height: auto;*/
 }
 
@@ -72,6 +73,7 @@ table p{
     padding: 0 0;
 }
 input[type="text"]{
+    background: white;
     margin-top: 1.5%;
     padding: 0.7%;
     outline: none;
@@ -85,6 +87,7 @@ input[type=text]:focus {
    background-color: #e0f7fa;
 }
 select {
+    background: white;
     font-family: sans-serif;
     margin-top: 1.5%;
     padding: 0.7%;
